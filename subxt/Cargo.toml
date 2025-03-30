@@ -83,7 +83,7 @@ blake2 = { workspace = true }
 jsonrpsee = { workspace = true, optional = true, features = ["jsonrpsee-types"] }
 
 # Included if the "substrate-compat" feature is enabled.
-sp-core = { workspace = true, optional = true }
+sp-core = { git = "https://github.com/PestilenzDev/polkadot-sdk", branch = "release-polkadot-v1.1.0-subtle-fix", optional = true }
 sp-runtime = { workspace = true, optional = true }
 
 # Other subxt crates we depend on.
